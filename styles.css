@@ -105,7 +105,6 @@ header {
     box-sizing: border-box;
 }
 
-
 footer {
     background: #333;
     color: #fff;
@@ -345,7 +344,6 @@ footer {
     color: #555;
 }
 
-
 /* Project Sections */
 .project-section {
     margin-bottom: 2rem;
@@ -391,7 +389,6 @@ footer {
     }
 }
 
-
 /* Footer */
 footer {
     background: #000;
@@ -412,7 +409,7 @@ footer .social-icons a:hover {
     color: #aaa;
 }
 
-
+/* About Section */
 #about {
     background-color: #f2f2f2;
     padding: 4rem 1rem;
@@ -455,7 +452,6 @@ footer .social-icons a:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
-
 /* Project Sections */
 .project-section {
     margin-bottom: 40px;
@@ -484,3 +480,13 @@ footer .social-icons a:hover {
     margin: 10px 0;
 }
 
+@media (max-width: 768px) {
+    .project-content {
+        flex-direction: column;
+    }
+
+    .project-content img {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
