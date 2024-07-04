@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Sphesihle Foundation</title>
+    <title>Contact Us - NGO</title>
     <link rel="stylesheet" href="../styles.css">
     <style>
         body {
@@ -102,10 +102,11 @@
             gap: 2rem;
             max-width: 1200px;
             margin: 0 auto;
+            flex-wrap: wrap;
         }
 
-        .donation-form {
-            flex: 1;
+        .donation-form, .contact-details {
+            flex: 1 1 300px;
             background: #f5f5f5;
             padding: 2rem;
             border-radius: 10px;
@@ -113,12 +114,12 @@
             text-align: left;
         }
 
-        .donation-form h3 {
+        .donation-form h3, .contact-details h3 {
             font-size: 2rem;
             margin-bottom: 1rem;
         }
 
-        .donation-form p {
+        .donation-form p, .contact-details p {
             color: #333;
             font-size: 1.2rem;
             margin-bottom: 1rem;
@@ -157,26 +158,6 @@
             background: #555;
         }
 
-        .contact-details {
-            flex: 1;
-            background: #f9f9f9;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            text-align: left;
-        }
-
-        .contact-details h3 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .contact-details p {
-            color: #333;
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-        }
-
         footer {
             background: #000;
             color: #fff;
@@ -211,7 +192,7 @@
     </header>
 
     <section id="contact" class="contact-section">
-        <h2 style="text-align:center">Contact Us</h2>
+        <h2>Contact Us</h2>
         <div class="contact-container">
             <div class="donation-form">
                 <h3>Support Our Cause</h3>
@@ -244,7 +225,7 @@
             <div class="row">
                 <div class="col text-center">
                     <h3>Sphesihle Foundations</h3>
-                    <p>Copyright &copy; <span id="year">2024</span></p>
+                    <p>&copy; <span id="year">2024</span></p>
                     <div class="social-icons mt-3">
                         <a href="https://www.facebook.com" target="_blank" class="text-white me-2"><i class="bi bi-facebook"></i></a>
                         <a href="https://instagram.com" target="_blank" class="text-white"><i class="bi bi-instagram"></i></a>
