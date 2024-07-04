@@ -472,6 +472,7 @@ footer .social-icons a:hover {
     max-width: 40%;
     height: auto;
     border-radius: 8px;
+    object-fit: cover;
 }
 
 .project-details {
@@ -486,10 +487,12 @@ footer .social-icons a:hover {
 @media (max-width: 768px) {
     .project-content {
         flex-direction: column;
+        align-items: center;
     }
 
     .project-content img {
         margin-right: 0;
         margin-bottom: 1rem;
+        width: 90%;
     }
 }
