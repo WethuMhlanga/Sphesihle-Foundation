@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - NGO</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="../styles.css">
+
     <style>
         body {
             font-family: 'Times New Roman', Times, serif;
@@ -14,7 +15,7 @@
         }
 
         header {
-            background: #000;
+            background: #044d91;
             color: #fff;
             padding: 1rem 0;
             position: sticky;
@@ -33,7 +34,7 @@
         }
 
         .logo img {
-            height: 70px;
+            height: 60px;
             width: 100px;
         }
 
@@ -50,7 +51,7 @@
         }
 
         .nav-links a:hover {
-            background: #444;
+            background: #609aff;
             border-radius: 5px;
         }
 
@@ -158,8 +159,72 @@
             background: #555;
         }
 
+        .our-team {
+            flex: 1 1 100%;
+            background: #f5f5f5;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 2rem;
+        }
+        
+        .our-team h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #044d91; /* Header color */
+        }
+        
+        .team-card {
+            background: #ffffff; /* Card background color */
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 1rem;
+        }
+        
+        .founder-img {
+            width: 120px; /* Adjust as needed */
+            height: 120px; /* Adjust as needed */
+            border-radius: 50%; /* Makes the image round */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            margin-bottom: 1rem; /* Space between image and text */
+        }
+        
+        .team-info h4 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #333; /* Text color */
+        }
+        
+        .team-info p {
+            color: #666; /* Description color */
+            font-size: 1rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .founder-img {
+                width: 100px; /* Smaller image for mobile */
+                height: 100px; /* Smaller image for mobile */
+            }
+        
+            .our-team h3 {
+                font-size: 1.8rem; /* Smaller header for mobile */
+            }
+        
+            .team-info h4 {
+                font-size: 1.3rem; /* Smaller name for mobile */
+            }
+        
+            .team-info p {
+                font-size: 0.9rem; /* Smaller description for mobile */
+            }
+        }
+        
+
         footer {
-            background: #000;
+            background: #044d91;
             color: #fff;
             text-align: center;
             padding: 1rem 0;
@@ -169,13 +234,34 @@
         footer p {
             font-size: 1rem;
         }
+
+        .partner-logos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem; /* Space between logos */
+            margin-top: 1rem; /* Space above the logos */
+        }
+        
+        .partner-logo {
+            height: 50px; /* Adjust height to fit your design */
+            width: auto; /* Maintain aspect ratio */
+            transition: transform 0.3s ease; /* Add a little animation */
+        }
+        
+        .partner-logo:hover {
+            transform: scale(1.1); /* Slightly enlarge on hover */
+        }
+        
     </style>
+
 </head>
+
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">
-                <img src="../img/sphesihle-foundation-logo.png" alt="NGO Logo">
+                <img src="../img/logo-pic.png" alt="NGO Logo">
             </div>
             <div class="menu-icon" id="menu-icon">
                 <span></span>
@@ -197,6 +283,14 @@
             <div class="donation-form">
                 <h3>Support Our Cause</h3>
                 <p>Your generous donations help us make a difference. Please contact us to make a <b>donation</b>.</p>
+                <!-- Add your PayPal button here -->
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                    <input type="hidden" name="cmd" value="_donations">
+                    <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL@example.com"> <!-- Your PayPal email -->
+                    <input type="hidden" name="item_name" value="Donation to Sphesihle Foundation">
+                    <input type="hidden" name="currency_code" value="USD">
+                    <input type="submit" class="btn" value="Donate Now">
+                </form>
             </div>
             <div class="contact-details">
                 <h3>Contact Details</h3>
@@ -206,21 +300,45 @@
             </div>
         </div>
     </section>
+    
+
+    <div class="our-team">
+        <h3>Our Team</h3>
+        <div class="team-card">
+            <img src="../img/connie.png" alt="Founder Picture" class="founder-img">
+            <div class="team-info">
+                <h4>Constance Manana</h4>
+                <p>Founder of Sphesihle Foundation<p>
+                    <p>Education<p>
+            </div>
+        </div>
+    </div>
 
     <footer id="main-footer" class="bg-dark text-white py-4">
         <div class="container">
             <div class="row">
                 <div class="col text-center">
                     <h3>Sphesihle Foundation</h3>
-                    <p>&copy; Copyright<span id="year">2024</span></p>
+                    <p>&copy; Copyright <span id="year">2024</span></p>
                     <div class="social-icons mt-3">
                         <a href="https://www.facebook.com" target="_blank" class="text-white me-2"><i class="bi bi-facebook"></i></a>
                         <a href="https://instagram.com" target="_blank" class="text-white"><i class="bi bi-instagram"></i></a>
                     </div>
                 </div>
             </div>
+            <div class="row mt-3">
+                <div class="col text-center">
+                    <h4>Partner Organizations</h4>
+                    <div class="partner-logos">
+                        <a href="https://partner1.org" target="_blank">
+                            <img src="../img/IS.jpg" alt="Partner 1" class="partner-logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
+    
 
     <!-- Add Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
