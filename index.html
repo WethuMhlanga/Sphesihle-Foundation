@@ -10,7 +10,7 @@
     <header>
         <nav class="navbar">
             <div class="logo">
-                <img src="img/sphesihle-foundation-logo.png" alt="NGO Logo">
+                <img src="img/logo-pic.png" alt="NGO Logo">
             </div>
             <div class="menu-icon" id="menu-icon">
                 <span></span>
@@ -27,58 +27,118 @@
     </header>
 
     <section id="home" class="hero-section">
+        <video autoplay muted loop class="hero-video">
+            <source src="video/IMG_2623.mov" type="video/mp4">
+        </video>
         <div class="hero-content">
             <h1>Welcome to Sphesihle Foundation</h1>
-            <p>Empowering young girls from underprivileged backgrounds through education and entrepreneurship.</p>
+            <p>Empowering young girls with tools and mindset to unleash their potential.</p>
             <a href="html/about.html" class="btn">Learn More</a>
         </div>
-        <canvas id="animation-canvas"></canvas>
     </section>
 
-    <section id="mission" class="content-section">
-        <h2>Our Mission</h2>
-        <p>To provide support and offer knowledge to young girls from underprivileged backgrounds, empowering them to become leaders and entrepreneurs.</p>
-    </section>
-
-    <section id="vision" class="content-section">
-        <h2>Our Vision</h2>
-        <p>To create a world where every young girl has equal opportunities to thrive and succeed no matter their background.</p>
-    </section>
-
-    <section id="whys" class="content-section">
-        <h2>The WHYS</h2>
-        <div class="why">
-            <h3>Empowerment</h3>
-            <p>We believe in empowering young girls with the skills and knowledge they need to transform their lives and communities.</p>
-        </div>
-        <div class="why">
-            <h3>Equality</h3>
-            <p>We strive for gender equality and believe in providing equal opportunities for all young girls, regardless of their background.</p>
-        </div>
-        <div class="why">
-            <h3>Community Impact</h3>
-            <p>Our goal is to make a positive impact in the communities we serve, fostering long-term sustainable development.</p>
-        </div>
-        <div class="why">
-            <h3>Leadership Development</h3>
-            <p>We aim to nurture leadership qualities in young girls, preparing them to become future leaders and change-makers.</p>
+    <section>
+        <div class="mission">
+            <h3>Our Mission</h3>
+            <p>Our mission is to provide tools, mindsets, and skills to young girls from underprivileged backgrounds to overcome barriers, shape their futures, and drive meaningful change in their communities and beyond.
+            </p>
         </div>
     </section>
 
+    <!-- Vision Section -->
+    <section class="vision-section">
+        <h3>Our Vision</h3>
+        <p>Our vision is to build a world where every young girl has equal access to opportunities, resources, and support to succeed and reach her full potential. We envision a future where all girls can pursue their dreams without limitations, be empowered to shape their destinies and contribute meaningfully to society.</p>
+    </section>
+
+    <section class="projects-section">
+        <h2>Our Projects</h2>
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="img/education.jpeg" alt="Project 1">
+                <div class="project-info">
+                    <h3>Project 1: Education Support</h3>
+                    <p>Providing scholarships and mentoring for young girls.</p>
+                </div>
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="img/enterprenuer.jpeg" alt="Project 2">
+                <div class="project-info">
+                    <h3>Project 2: Entrepreneurship Training</h3>
+                    <p>Empowering women with skills to start and run businesses.</p>
+                </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="project-card">
+                <img src="img/gardening.jpeg" alt="Project 3">
+                <div class="project-info">
+                    <h3>Project 3: Community Outreach</h3>
+                    <p>Providing basic necessities to underprivileged communities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="newsletter-section">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our newsletter and get the latest news and project updates from the Sphesihle Foundation.</p>
+        <form action="subscribe.php" method="post">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="btn">Subscribe</button>
+        </form>
+    </section>
+
+    <section class="map-section">
+        <div class="map-overlay"></div>
+        <h2>Find Us</h2>
+        <p>We'd love to hear from you! Visit us at our headquarters.</p>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14386.170637616042!2d31.6822708!3d-25.6533001!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee62b2c0a41ed8f%3A0x6de2e37e706b68a9!2sImagine%20Scholar!5e0!3m2!1sen!2ssg!4v1729276515945!5m2!1sen!2ssg" 
+                width="100%" 
+                height="450" 
+                frameborder="0" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+    
+    
+
+    
     <footer id="main-footer" class="bg-dark text-white py-4">
         <div class="container">
             <div class="row">
                 <div class="col text-center">
                     <h3>Sphesihle Foundation</h3>
-                    <p>Copyright &copy; <span id="year">2024</span></p>
+                    <p>&copy; Copyright <span id="year">2024</span></p>
                     <div class="social-icons mt-3">
                         <a href="https://www.facebook.com" target="_blank" class="text-white me-2"><i class="bi bi-facebook"></i></a>
                         <a href="https://instagram.com" target="_blank" class="text-white"><i class="bi bi-instagram"></i></a>
                     </div>
                 </div>
             </div>
+            <div class="row mt-3">
+                <div class="col text-center">
+                    <h4>Partner Organizations</h4>
+                    <div class="partner-logos">
+                        <a href="https://partner1.org" target="_blank">
+                            <img src="img/IS.jpg" alt="Partner 1" class="partner-logo">
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
+    
     
     <!-- Add Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
