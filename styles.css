@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background: #000;
+    background: #044d91;
     color: #fff;
     padding: 1rem 0;
     position: sticky;
@@ -25,7 +25,7 @@ header {
 }
 
 .logo img {
-    height: 70px;
+    height: 60px;
     width: 100px;
 }
 
@@ -42,7 +42,7 @@ header {
 }
 
 .nav-links a:hover {
-    background: #444;
+    background: #609aff;
     border-radius: 5px;
 }
 
@@ -54,16 +54,29 @@ header {
     text-align: center;
     padding: 4rem 1rem;
     background: #7a7777;
-    height: calc(100vh - 60px);
+    height: 100vh;
     overflow: hidden;
     box-sizing: border-box;
 }
 
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the section */
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Places the video behind content */
+}
+
 .hero-content {
     position: relative;
-    z-index: 1;
-    max-width: 600px;
-    color: #fff;
+    z-index: 2; /* Places content above the video */
+    color: white; /* Adjust text color for visibility */
+    text-align: center; /* Center-align the text */
+    padding: 20px; /* Add some padding */
+    backdrop-filter: rgba(0, 0, 0, 0.5); /* Optional: Adds a dark overlay for better text visibility */
 }
 
 .hero-content h1 {
@@ -77,25 +90,19 @@ header {
 }
 
 .btn {
-    padding: 0.75rem 1.5rem;
-    background: #000;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth transition */
 }
 
 .btn:hover {
-    background: #555;
+    background-color: #0056b3; /* Darker shade on hover */
 }
 
-#animation-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-}
 
 .content-section {
     padding: 2rem 1rem;
@@ -171,25 +178,29 @@ footer {
 }
 
 /* Vision Section */
-#vision {
-    background-color: #e8e8e8;
-    text-align: center;
-    padding: 60px 0;
+.vision-section {
+    padding: 40px 20px; /* Add some padding for spacing */
+    background-color: #ebf7fc; /* White background for contrast */
+    text-align: center; /* Center align text */
+    border: 1px solid #e0e0e0; /* Light border for separation */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px 0; /* Margin for spacing between sections */
 }
 
-#vision h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #333; /* Dark gray text */
+.vision-section h3 {
+    font-size: 2rem; /* Larger font for heading */
+    color: #007bff; /* Primary color for consistency */
+    margin-bottom: 15px; /* Space below heading */
 }
 
-#vision p {
-    font-size: 1.2rem;
-    color: #333; /* Dark gray text */
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
+.vision-section p {
+    font-size: 1.2rem; /* Larger font for paragraph */
+    color: #333; /* Dark color for readability */
+    max-width: 800px; /* Limit width for better readability */
+    margin: 0 auto; /* Center align paragraph */
 }
+
 
 /* WHYs Section */
 #whys {
@@ -394,7 +405,7 @@ footer {
 
 /* Footer */
 footer {
-    background: #000;
+    background: #044d91;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
@@ -484,6 +495,76 @@ footer .social-icons a:hover {
     margin: 10px 0;
 }
 
+/* Core Areas Section */
+.core-areas {
+    background: linear-gradient(135deg, #e0f7fa, #fff3e0);
+    padding: 3rem 1rem;
+}
+
+.core-areas h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.core-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.core-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.core-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.core-card h3 {
+    font-size: 1.5rem;
+    color: #00796b;
+    margin-bottom: 1rem;
+}
+
+.core-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Mission Section */
+.mission {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    background: #fffde7;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.mission h3 {
+    font-size: 1.8rem;
+    color: #f57c00;
+    margin-bottom: 1rem;
+}
+
+.mission p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
 @media (max-width: 768px) {
     .project-content {
         flex-direction: column;
@@ -495,4 +576,212 @@ footer .social-icons a:hover {
         margin-bottom: 1rem;
         width: 90%;
     }
+}
+
+/* Interactive Projects Section */
+.projects-section {
+    padding: 4rem 2rem;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.project-card {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-card:hover img {
+    transform: scale(1.1);
+}
+
+.project-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-card:hover .project-info {
+    transform: translateY(0);
+}
+
+.project-info h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.project-info p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.testimonials-section {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.testimonials-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 300px;
+}
+
+.testimonial h4 {
+    margin-top: 10px;
+    color: #007bff;
+}
+
+
+.newsletter-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #044d91;
+    color: #fff;
+}
+
+.newsletter-section input {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.newsletter-section button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #fff;
+    color: #044d91;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter-section button:hover {
+    background-color: #ffcc00;
+    color: #fff;
+}
+
+
+.map-section {
+    padding: 80px 20px; /* Increased padding for more breathing space */
+    background-color: #f4f4f4; /* Light background for contrast */
+    text-align: center;
+    border-top: 2px solid #007bff; /* Top border to add a visual break */
+}
+
+.map-section h2 {
+    font-size: 2.5rem; /* Larger heading for impact */
+    margin-bottom: 20px; /* Space below heading */
+    color: #333; /* Dark color for readability */
+}
+
+.map-section p {
+    font-size: 1.2rem; /* Slightly larger font for paragraph */
+    margin-bottom: 40px; /* Space below paragraph */
+    color: #666; /* Softer color for text */
+}
+
+.map-container {
+    width: 100%;
+    height: 450px; /* Fixed height for the map */
+    max-width: 1000px; /* Limiting the max width for larger screens */
+    margin: 0 auto; /* Centering the container */
+    border-radius: 8px; /* Rounded corners for a softer look */
+    overflow: hidden; /* Ensures any overflow content is hidden */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s; /* Smooth scale transition on hover */
+}
+
+.map-container:hover {
+    transform: scale(1.02); /* Slightly scale up on hover for interaction */
+}
+
+/* Optional Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .map-section {
+        padding: 60px 10px; /* Reduced padding on smaller screens */
+    }
+
+    .map-section h2 {
+        font-size: 2rem; /* Slightly smaller heading */
+    }
+
+    .map-section p {
+        font-size: 1rem; /* Smaller paragraph text */
+    }
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.partner-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem; /* Space between logos */
+    margin-top: 1rem; /* Space above the logos */
+}
+
+.partner-logo {
+    height: 50px; /* Adjust height to fit your design */
+    width: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Add a little animation */
+}
+
+.partner-logo:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
 }
